@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  src: url('../assets/fonts/Rubik-medium.ttf') format('truetype');
+}
+
+html, body{
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Rubik, "SF Pro Display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
+p {
+  margin: .25em 0;
+}
+.blank {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.card {
+  position: relative;
+  min-height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.card:before {
+  position: absolute;
+  content: "";
+  background: black;
+  bottom: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 10;
+  transition: height .75s ease-in-out;
+}
+.card.end:before {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.instructionsList {
+}
+.instructionsList > *:first-child {
+  margin-top: 0;
+}
+.instructionsList > *:last-child {
+  margin-bottom: 0;
+}
+
+.choiceList {
+  margin-top: 1rem;
+}
+.choiceList button {
+  display: block;
+  width: 100%;
+  padding: .35em .5em;
+  border: 2px solid #000;
+  border-top: none;
+  border-radius: 0;
+  text-align: left;
+  box-sizing: border-box;
+  cursor: pointer;
+  animation: flashIn .6s;
+  animation-fill-mode: both;
+  transition: none;
+}
+.choiceList button:first-child {
+  border-top: 2px solid #000;
+}
+.choiceList button:active,
+.choiceList button.selected {
+  background: #000;
+  color: #fff;
+  animation: none;
+}
+.choiceList button:nth-child(1) { animation-delay: 0s; }
+.choiceList button:nth-child(2) { animation-delay: .2s; }
+.choiceList button:nth-child(3) { animation-delay: .4s; }
+.choiceList button:nth-child(4) { animation-delay: .6s; }
+
+@keyframes flashIn {
+  0%   {opacity: 0; background-color: rgba(0, 0, 0, 255);}
+  .1%  {opacity: 1; background-color: rgba(0, 0, 0, 255);}
+  100% {opacity: 1; background-color: rgba(0, 0, 0, 0);}
+}
+
+.revealWord {
+  position: relative;
+  display: inline-block;
+  margin-right: .35ch;
+  color: #0000;
+  animation: 1.4s revealWordTextAnim;
+  animation-fill-mode: forwards;
+  margin-top: .35ch;
+}
+.revealWord:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: 1.4s revealWordAnim;
+  animation-timing-function: ease-out;
+  animation-delay: inherit;
+}
+
+@keyframes revealWordAnim {
+  0%    { top: 90%; bottom: 0;    opacity: 1; }
+  9%    {                         opacity: 1; }
+  40%   { top: 90%;               opacity: 1; }
+  70%   { top:   0; bottom: 0;                }
+  100%  { top:   0; bottom: 100%; opacity: 1; }
+}
+
+@keyframes revealWordTextAnim {
+  0%    { color: #0000; }
+  69%   { color: #0000; }
+  70%   { color: #000F; }
+  100%  { color: #000F; }
+}
+
+
+
+
+@media (min-width: 320px)  { body {font-size: 24px;} }
+@media (min-width: 720px)  { body {font-size: 26px;} }
+@media (min-width: 1080px) { body {font-size: 28px;} }
+@media (min-width: 1280px) { body {font-size: 32px;} }
+
+@media (min-width: 720px) {
+  .card {
+    display: flex;
+    padding: 0 3rem;
+  }
+
+  .instructionsList {
+    width: 50%;
+    margin: 20vh 0 0;
+  }
+  .choiceList {
+    width: 35%;
+    margin: 20vh 10% 0 5%;
+  }
+}
