@@ -8,7 +8,7 @@ The game topic turned into my lose of trust about big tech companies, regarding 
 
 Sadly, I haven't been able to wrap up some ground breaking examples in each domains.
 
-**TD;DR**: This game is a failed attempt to warn public and take conscience of privacy rights, right to repair, and other practices from tech companies.
+**TD;DR**: This game is a failed attempt to warn public to be aware of privacy rights, right to repair, and other practices from tech companies.
 
 ## Edit the game
 
@@ -19,3 +19,4 @@ Sadly, I haven't been able to wrap up some ground breaking examples in each doma
 ## Contribute
 
 If like the idea and want to add some parts in the story, correct my awful english, or add better examples. Please do!
+I would love if this little joke would turn into something useful.
