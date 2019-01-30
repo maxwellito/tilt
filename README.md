@@ -2,6 +2,8 @@
 
 *A twinery based game about our relationship with technology.*
 
+[Try it here](https://maxwellito.github.io/tilt)
+
 It all started with the idea to build a fresh version of command line game. After many design and lack of ideas, the repo took the dust for a while.
 Until the release of Black Mirror's Bandersnatch on Netflix. A "choose you own adventure" based video where you pick the choice of a character that always end badly. It was very interesting to see how the game give an illusion of control to bring the viewer where the author wants. After reading a bit more about the making of this experience, the author used [Twinery](http://twinery.org/) to build the tree choice storyline game. This open source software serve one purpose but do it well (once you understand how to link passages..).
 The game topic turned into my lose of trust about big tech companies, regarding privacy concerns, social impacts, right to repair, planned obsolescence. all of them got good and bad points. But the motivation of this game is trolling.
