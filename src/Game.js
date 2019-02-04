@@ -42,7 +42,7 @@ Game.prototype.loadProgress = function () {
     this.cardId = savedProgress
   }
   else {
-    this.cardId = 'google_tracking_targetting_explain'
+    this.cardId = 'Start'
   }
 }
 
