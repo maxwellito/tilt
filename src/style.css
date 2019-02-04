@@ -145,7 +145,7 @@ p {
 
   .instructionsList {
     width: 50%;
-    margin: 20vh 0 0;
+    margin: 20vh 0 2rem;
   }
   .choiceList {
     width: 35%;
